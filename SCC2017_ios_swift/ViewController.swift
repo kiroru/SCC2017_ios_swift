@@ -31,16 +31,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        items.append(
-            Item(imageUrl: "Japan.png", jname: "日本", ename: "Japan"))
-        items.append(
-            Item(imageUrl: "China.png", jname: "中国", ename: "China"))
-        items.append(
-            Item(imageUrl: "USA.png", jname: "アメリカ", ename: "America"))
-        items.append(
-            Item(imageUrl: "England.png", jname: "イギリス", ename: "England"))
-        items.append(
-            Item(imageUrl: "France.png", jname: "フランス", ename: "France"))
+        items.append(Item(imageUrl: "Japan.png", jname: "日本", ename: "Japan"))
+        items.append(Item(imageUrl: "China.png", jname: "中国", ename: "China"))
+        items.append(Item(imageUrl: "USA.png", jname: "アメリカ", ename: "America"))
+        items.append(Item(imageUrl: "England.png", jname: "イギリス", ename: "England"))
+        items.append(Item(imageUrl: "France.png", jname: "フランス", ename: "France"))
         
         tableView?.dataSource = self
         tableView?.delegate = self
@@ -55,13 +50,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 1
     }
     
-    func tableView(_ tableView: UITableView,
-                   numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")!
         let item = items[indexPath.row]
         
@@ -77,10 +70,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
-    func tableView(_ tableView: UITableView,
-                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80.0
     }
-
 }
 
