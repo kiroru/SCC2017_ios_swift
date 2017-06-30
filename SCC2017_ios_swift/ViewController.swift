@@ -46,6 +46,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            let item = items[(tableView?.indexPathForSelectedRow?.row)!]
+            let controller = segue.destination as! DetailViewController
+            controller.imageUrl = item.imageUrl
+            controller.jname = item.jname
+            controller.ename = item.ename
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

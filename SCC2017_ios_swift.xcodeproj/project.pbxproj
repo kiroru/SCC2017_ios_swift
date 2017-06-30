@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BA33999D20BF1DEA206BC25 /* Pods_SCC2017_ios_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9831ECD2ADA08F3B0EE355EC /* Pods_SCC2017_ios_swift.framework */; };
+		3A3F65181F0661E200F781C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F65171F0661E200F781C9 /* DetailViewController.swift */; };
 		3A84932C1F012F4500FF4187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84932B1F012F4500FF4187 /* AppDelegate.swift */; };
 		3A84932E1F012F4500FF4187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84932D1F012F4500FF4187 /* ViewController.swift */; };
 		3A8493311F012F4500FF4187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A84932F1F012F4500FF4187 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A3F65171F0661E200F781C9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3A8493281F012F4500FF4187 /* SCC2017_ios_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCC2017_ios_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A84932B1F012F4500FF4187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A84932D1F012F4500FF4187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				3A84932B1F012F4500FF4187 /* AppDelegate.swift */,
 				3A84932D1F012F4500FF4187 /* ViewController.swift */,
+				3A3F65171F0661E200F781C9 /* DetailViewController.swift */,
 				3A84932F1F012F4500FF4187 /* Main.storyboard */,
 				3A8493321F012F4500FF4187 /* Assets.xcassets */,
 				3A8493341F012F4500FF4187 /* LaunchScreen.storyboard */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3F65181F0661E200F781C9 /* DetailViewController.swift in Sources */,
 				3A84932E1F012F4500FF4187 /* ViewController.swift in Sources */,
 				3A84932C1F012F4500FF4187 /* AppDelegate.swift in Sources */,
 			);
@@ -376,6 +380,7 @@
 				3A84933C1F012F4500FF4187 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
